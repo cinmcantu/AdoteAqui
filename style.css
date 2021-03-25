@@ -86,6 +86,14 @@ body{
 
 
 /*BODY*/
+.coluna h2{
+    margin-top: 40px;
+}
+
+
+.coluna {
+    flex-direction: column;
+}
 
 .topo {
     margin-top: 40px;
@@ -98,7 +106,16 @@ body{
 .topo img:hover {
     transform: scale(1.5);
 }
+.imagens {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 90vw;
+}
 
+.imagens img{
+    width: 20vw;
+    margin: 3px;
+}
 
 
 @media (max-width: 700px){
@@ -121,5 +138,14 @@ body{
     }
     .topo {
         flex-direction: column;
+    }
+
+    .imagens {
+        border: solid;
+        flex-direction: column; 
+    }
+
+    .imagens img {
+        width: 70vw;
     }
 }
