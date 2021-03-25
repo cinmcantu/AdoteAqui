@@ -141,7 +141,6 @@ body{
     }
 
     .imagens {
-        border: solid;
         flex-direction: column; 
     }
 
