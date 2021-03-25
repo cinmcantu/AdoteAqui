@@ -3,7 +3,8 @@
     padding: 0px;
 }
 
-.body{
+body{
+    background-color:  rgb(201, 201, 161);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,64 +17,86 @@
 .nav-bar {
     justify-content: space-between;
     font-size: 18px;
-    height: 60px;
-}
-
-.nav-bar p{
+    background-color: rgb(184, 184, 110);
+    color: rgb(36, 34, 34);
     font-weight: bold;
-    color: rgb(255, 255, 255);
 }
 
 .nav-logo {
     justify-content: flex-start;
     width: 60vw;
-    background-color: rgb(50%, 0%, 90%);
-    padding: 10px;
-    height: inherit;
-}
-
-.nav-logo:hover{
-    font-size: 20px;
+    padding: 10px 30px;
 }
 
 .menu{
-    background-color: rgb(30, 220, 230);
+    justify-content: space-around;
     width: 40vw;
     padding: 10px;
     height: inherit;
 }
 
-.menu-lista {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    list-style-type: none;
+.nav-logo:hover{
+    font-size: 1.2em;
 }
 
-.menu-lista li{
-    margin: 0px 20px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    height: 30px;
+.menu > ul{
+    list-style: none;
 }
 
-.menu-lista li:hover{
-    font-size: 1.1em;
+.menu >ul>li {
+    padding: 0 10px;
+    line-height: 2;
 }
 
 .sub-menu{
     list-style: none;
     flex-direction: column;
     position:absolute;
-    background-color: rgb(50%, 0%, 90%);
-    margin-top: 10px;
-    padding: 10px 0;
+    background-color: rgb(184, 184, 110);
+    padding-top: 10px;
+    padding: 10px 20px;
+    line-height: 2;
+    font-size: 0.9em;
     display: none;
 }
 
-.menu-lista li:hover .sub-menu {
+.menu li:hover{
+    font-size: 1.1em;
+    color: rgb(82, 82, 204);
+}
+
+.menu >ul>li:first-child {
+    border-left: 1px solid rgb(146, 146, 85);
+}
+.menu >ul>li {
+    border-right: 1px solid rgb(146, 146, 85);
+}
+
+.menu>ul>li:hover .sub-menu {
     display:block;
-    font-size: 18px;
+    color: rgb(36, 34, 34);
+}
+
+.sub-menu li{
+    border-bottom: 1px solid rgb(146, 146, 85);
+}
+.sub-menu li:last-child{
+    border-bottom: none;
+}
+
+
+/*BODY*/
+
+.topo {
+    margin-top: 40px;
+}
+
+.topo div{
+    padding: 40px;
+}
+
+.topo img:hover {
+    transform: scale(1.5);
 }
 
 
@@ -95,5 +118,8 @@
         text-align: center;
         margin: 0px 0px;
         width: 100%;
+    }
+    .topo {
+        flex-direction: column;
     }
 }
