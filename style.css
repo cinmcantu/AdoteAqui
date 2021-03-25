@@ -99,22 +99,33 @@ body{
     margin-top: 40px;
 }
 
+.topo img{
+    width: 400px;
+    border-radius: 10px;
+}
+
 .topo div{
     padding: 40px;
 }
 
-.topo img:hover {
-    transform: scale(1.5);
-}
 .imagens {
     margin-top: 30px;
     flex-wrap: wrap;
+    align-items: flex-end;
     width: 90vw;
 }
 
 .imagens img{
-    width: 20vw;
-    margin: 3px;
+    width: 17vw;
+    margin: 5px;
+    border: 5px solid rgb(146, 146, 85);;
+    border-radius: 10px;
+}
+
+.imagens img:hover{
+    position: relative;
+    z-index: 2;
+    transform: scale(1.5);
 }
 
 
@@ -146,5 +157,9 @@ body{
 
     .imagens img {
         width: 70vw;
+    }
+
+    .imagens img:hover{
+        transform: scale(1);
     }
 }
