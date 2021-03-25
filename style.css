@@ -90,7 +90,6 @@ body{
     margin-top: 40px;
 }
 
-
 .coluna {
     flex-direction: column;
 }
@@ -133,6 +132,10 @@ body{
     .nav-logo{
         display: none;
     }
+
+    .nav-logo img{
+        width: 95vw;
+    }
     
     .menu {
         width: 100vw;
@@ -152,14 +155,20 @@ body{
     }
 
     .imagens {
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .imagens img {
         width: 70vw;
+        margin: 10px;
     }
 
     .imagens img:hover{
         transform: scale(1);
+    }
+
+    .coluna> p{
+        display: none;
     }
 }
