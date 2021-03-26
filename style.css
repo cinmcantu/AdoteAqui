@@ -61,7 +61,7 @@ body{
 }
 
 .menu li:hover{
-    color: rgb(82, 82, 204);
+    color: rgb(128, 128, 133);
 }
 
 .menu >ul>li:first-child {
@@ -86,7 +86,7 @@ body{
 
 /*BODY*/
 .coluna h2{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .coluna {
@@ -94,7 +94,9 @@ body{
 }
 
 .topo {
-    margin-top: 40px;
+    background-image: url(./src/Black_Animal_Paw_Pattern_generated.jpg);
+    background-size: 100%;
+    padding: 30px 0px;
 }
 
 .topo img{
@@ -106,21 +108,17 @@ body{
     padding: 40px;
 }
 
+.topo div:nth-child(2){
+    background-color: rgb(170, 170, 175, 0.8);
+    border-radius: 10px;
+    color: #fff;
+}
+
 .imagens {
     margin-top: 30px;
     flex-wrap: wrap;
     align-items: flex-end;
     width: 90vw;
-}
-
-footer{
-    background-color: rgb(146, 146, 85);
-    height: 50px;
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
 }
 
 .imagens img{
@@ -138,7 +136,7 @@ footer{
 .informacoes{
     display: none;
     background-color: #fff;
-    border: 5px solid rgb(82, 82, 204);
+    border: 5px solid rgb(170, 170, 175);
     border-radius: 10px;
     padding: 5px;
     text-align: center;
@@ -151,6 +149,26 @@ footer{
     z-index: 2;
 }
 
+#cachorros::after, #gatos::after {
+    content: " ";
+    background-color: rgb(170, 170, 175);
+    border-radius: 5px;
+    padding: 3px 200px;
+    margin-top: 50px;
+}
+
+
+/* Footer */
+footer{
+    background-color: rgb(146, 146, 85);
+    padding: 30px 0px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 
 @media (max-width: 700px){
     .nav-logo{
