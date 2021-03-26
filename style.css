@@ -61,7 +61,6 @@ body{
 }
 
 .menu li:hover{
-    font-size: 1.1em;
     color: rgb(82, 82, 204);
 }
 
@@ -114,17 +113,42 @@ body{
     width: 90vw;
 }
 
+footer{
+    background-color: rgb(146, 146, 85);
+    height: 50px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
 .imagens img{
     width: 17vw;
     margin: 5px;
-    border: 5px solid rgb(146, 146, 85);;
+    border: 5px solid rgb(146, 146, 85);
     border-radius: 10px;
 }
 
-.imagens img:hover{
+.candidatos:hover{
     position: relative;
     z-index: 2;
-    transform: scale(1.5);
+    transform: scale(1.1);
+}
+.informacoes{
+    display: none;
+    background-color: #fff;
+    border: 5px solid rgb(82, 82, 204);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin-top: -9px;
+}
+
+.candidatos:hover .informacoes{
+    display: flex;
+    justify-content: center;
+    z-index: 2;
 }
 
 
@@ -154,18 +178,38 @@ body{
         flex-direction: column;
     }
 
+    .topo div {
+        padding: 10px;
+    }
+
+    .topo img {
+        width: 90vw;
+    }
+
     .imagens {
         flex-direction: column;
         align-items: center;
     }
 
     .imagens img {
-        width: 70vw;
+        width: 60vw;
         margin: 10px;
     }
 
-    .imagens img:hover{
+    .candidatos:hover {
         transform: scale(1);
+    }
+
+    .candidatos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoes{
+        display: flex;
+        justify-content: center;
+        width: 58vw;
     }
 
     .coluna> p{
