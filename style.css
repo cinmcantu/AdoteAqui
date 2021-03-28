@@ -170,6 +170,8 @@ footer{
     color: #fff;
 }
 
+/*media query*/
+
 @media (max-width: 700px){
     .nav-logo{
         display: none;
@@ -181,17 +183,31 @@ footer{
     
     .menu {
         width: 100vw;
+        justify-content: flex-start;
     }
 
-    .menu-lista {
-        display: flex;
+    .menu ul {
         flex-direction: column;
+        align-items: flex-start;
     }
-    .menu-lista li{
-        text-align: center;
-        margin: 0px 0px;
-        width: 100%;
+
+    .sub-menu {
+        position: relative;
+        left: 5px;
+        padding-top: 0x;
     }
+
+    .menu >ul>li {
+        border-right: none;
+        border-top: 1px solid rgb(146, 146, 85);
+    }
+
+
+    .menu >ul>li:first-child {
+        border-top: none;
+        border-left: none;
+    }
+
     .topo {
         flex-direction: column;
     }
@@ -232,5 +248,9 @@ footer{
 
     .coluna> p{
         display: none;
+    }
+
+    #cachorros::after, #gatos::after {
+        padding: 3px 30vw;
     }
 }
